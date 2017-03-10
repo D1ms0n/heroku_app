@@ -12,7 +12,7 @@ def index(request):
     driver = webdriver.PhantomJS()
     driver.set_window_size(1120, 550)
     driver.get("https://www.instagram.com/%s/" % 'look_its_dimson')
-    links = self.driver.find_elements_by_css_selector('a')
+    links = driver.find_elements_by_css_selector('a')
     b = '';
     for link in links:
             link_attr = link.get_attribute('href')
