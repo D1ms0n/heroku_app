@@ -16,7 +16,7 @@ def index(request):
     b = '';
     for link in links:
             link_attr = link.get_attribute('href')
-            b+= link+ ' ' 
+            b+= link_attr+ ' ' 
     
     
     
