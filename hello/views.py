@@ -11,10 +11,12 @@ def index(request):
     # return HttpResponse('Hello from Python!')
     driver = webdriver.PhantomJS()
     driver.set_window_size(1120, 550)
-    driver.get("http://instagram.com/")
-    
-    a = driver.find_elements_by_css_selector('button')
-    b = len(a)
+    driver.get("https://www.instagram.com/%s/" % 'look_its_dimson')
+    links = self.driver.find_elements_by_css_selector('a')
+    b = '';
+    for link in links:
+            link_attr = link.get_attribute('href')
+            b+= link+ ' ' 
     
     
     
