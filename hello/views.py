@@ -11,7 +11,7 @@ def index(request):
     # return HttpResponse('Hello from Python!')
     driver = webdriver.PhantomJS()
     driver.set_window_size(1120, 550)
-    driver.get("http://studio7day.herokuapp.com/")
+    driver.get("http://instagram.com/")
     
     a = driver.find_elements_by_css_selector('button')
     b = len(a)
